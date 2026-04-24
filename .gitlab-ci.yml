@@ -1,0 +1,10 @@
+stages:
+  - test
+
+viewmodel_tests:
+  stage: test
+  tags:
+    - windows
+  script:
+    - msbuild *.sln /p:Configuration=Release /p:Platform="Any CPU"
+    - '$testExe = Get-ChildItem -Recurse -Filter "*.Tests.exe" | Where-Object { $_.FullName -like "*\bin\Release\*" } | Select-Object -First 1; & $testExe.FullName'

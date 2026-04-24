@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODOMVVM", "Паттерн MVVM\TODOMVVM.csproj", "{7CED51A9-D766-4CC0-9EC6-23EEA9E51E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODOMVVM.Tests", "Паттерн MVVM.Tests\TODOMVVM.Tests.csproj", "{D08A9DE7-65DF-4887-BF28-AE8D4B7DF902}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CED51A9-D766-4CC0-9EC6-23EEA9E51E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CED51A9-D766-4CC0-9EC6-23EEA9E51E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CED51A9-D766-4CC0-9EC6-23EEA9E51E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CED51A9-D766-4CC0-9EC6-23EEA9E51E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D08A9DE7-65DF-4887-BF28-AE8D4B7DF902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D08A9DE7-65DF-4887-BF28-AE8D4B7DF902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D08A9DE7-65DF-4887-BF28-AE8D4B7DF902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D08A9DE7-65DF-4887-BF28-AE8D4B7DF902}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEF93960-27E7-429A-876D-D380EA4E65E5}
+	EndGlobalSection
+EndGlobal
