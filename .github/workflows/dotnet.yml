@@ -1,0 +1,26 @@
+name: Build .NET Framework WPF
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v2
+    
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v2
+    
+    - name: Restore NuGet packages
+      run: nuget restore TODOMVVM.sln
+    
+    - name: Build solution
+      run: msbuild TODOMVVM.sln /p:Configuration=Release /p:Platform="Any CPU"
