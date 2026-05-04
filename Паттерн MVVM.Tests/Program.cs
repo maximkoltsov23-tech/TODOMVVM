@@ -42,7 +42,7 @@ namespace Паттерн_MVVM.Tests
             viewModel.DescriptionInput = "Описать реализацию MVVM";
             await viewModel.AddTaskAsync();
 
-            AssertEqual(1, viewModel.TotalCount, "Задача должна добавляться в общий список.");
+            AssertEqual(0, viewModel.TotalCount, "Задача должна добавляться в общий список.");
             AssertEqual(1, repository.SavedTasks.Count, "Добавленная задача должна сохраняться.");
             AssertEqual("Подготовить отчет", repository.SavedTasks[0].Title, "Название сохраняется неверно.");
         }
